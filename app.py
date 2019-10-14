@@ -53,7 +53,7 @@ def contact():
 
 @app.route('/hydroponics',methods=['GET','POST'])
 def hydroponics():
-    return render_template('hydroponics.html')
+    return render_template('Hydroponics.html')
 
 @app.route('/interior-design',methods=['GET','POST'])
 def interiordesign():
