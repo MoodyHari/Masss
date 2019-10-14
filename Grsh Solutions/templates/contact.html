@@ -1,0 +1,304 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+   <!-- Required meta tags -->
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   <title>GRSH</title>
+   <!-- <link rel="icon" href="static/img/favicon.png"> -->
+   <!-- Bootstrap CSS -->
+   <link rel="stylesheet" href="static/css/bootstrap.min.css">
+   <!-- animate CSS -->
+   <link rel="stylesheet" href="static/css/animate.css">
+   <!-- owl carousel CSS -->
+   <link rel="stylesheet" href="static/css/owl.carousel.min.css">
+   <!-- themify CSS -->
+   <link rel="stylesheet" href="static/css/themify-icons.css">
+   <!-- flaticon CSS -->
+   <link rel="stylesheet" href="static/css/flaticon.css">
+   <!-- magnific-popup CSS -->
+   <link rel="stylesheet" href="static/css/magnific-popup.css">
+   <!-- slick CSS -->
+   <link rel="stylesheet" href="static/css/slick.css">
+   <!-- font awesome CSS -->
+   <link rel="stylesheet" href="static/fontawesome/css/all.min.css">
+   <!-- style CSS -->
+   <link rel="stylesheet" href="static/css/style.css">
+</head>
+
+<body>
+   <!--::menu part start::-->
+   <header class="main_menu home_menu">
+      <div class="container">
+         <div class="row">
+            <div class="col-lg-12">
+               <nav class="navbar navbar-expand-lg navbar-light">
+                  <a class="navbar-brand" href="index.html"> <img src="static/img/footer1.png" alt="logo"> </a>
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                     <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse main-menu-item" id="navbarNav">
+                     <ul class="navbar-nav">
+                        <li class="nav-item active">
+                           <a class="nav-link" href="/">Home</a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link" href="/about">about</a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              Services
+                           </a>
+                           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                              <a class="dropdown-item" href="/rooftoplandscaping">Roof Top Landscaping</a>
+                              <a class="dropdown-item" href="/construction">Construction</a>
+                              <a class="dropdown-item" href="/hydroponics">Hydroponics</a>
+                              <a class="dropdown-item" href="/structural-consultancy">Structural Consultancy</a>
+                              <a class="dropdown-item" href="/CAD-Services">CAD Services</a>
+                           </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              Training
+                           </a>
+                           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                              <a class="dropdown-item" href="/Civil-CADD">Civil CADD</a>
+                              <a class="dropdown-item" href="/interior-design">Interior Design</a>
+                              <a class="dropdown-item" href="/nata">NATA(Entrance Exam)</a>
+                           </div>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link" href="/contact">Contact us</a>
+                        </li>
+                     </ul>
+                  </div>
+               </nav>
+            </div>
+         </div>
+      </div>
+   </header>
+   <!--::menu part end::-->
+
+   <!--::breadcrumb part start::-->
+   <section class="breadcrumb blog_bg">
+      <div class="container">
+         <div class="row">
+            <div class="col-lg-12">
+               <div class="breadcrumb_iner">
+                  <div class="breadcrumb_iner_item">
+                     <h2>contact</h2>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+   <!--::breadcrumb part start::-->
+
+  <!-- ================ contact section start ================= -->
+  <section class="contact-section area-padding">
+    <div class="container">
+      <div class="d-none d-sm-block mb-5 pb-4">
+        <div id="map" style="height: 480px;"></div>
+        <script>
+          function initMap() {
+            var uluru = {lat: -25.363, lng: 131.044};
+            var grayStyles = [
+              {
+                featureType: "all",
+                stylers: [
+                  { saturation: -90 },
+                  { lightness: 50 }
+                ]
+              },
+              {elementType: 'labels.text.fill', stylers: [{color: '#ccdee9'}]}
+            ];
+            var map = new google.maps.Map(document.getElementById('map'), {
+              center: {lat: -31.197, lng: 150.744},
+              zoom: 9,
+              styles: grayStyles,
+              scrollwheel:  false
+            });
+          }
+
+        </script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDpfS1oRGreGSBU5HHjMmQ3o5NLw7VdJ6I&callback=initMap"></script>
+
+      </div>
+
+
+      <div class="row">
+        <div class="col-12">
+          <h1 class="contact-title">Get in Touch</h1>
+        </div>
+        <div class="col-lg-8">
+          <form class="form-contact contact_form" action="/single" method="post" id="contactForm" novalidate="novalidate">
+            <div class="row">
+              <!-- <div class="col-12">
+                <div class="form-group">
+                    <textarea class="form-control w-100 placeholder hide-on-focus" name="message" id="message" cols="30" rows="9" placeholder="Enter Message"></textarea>
+                </div>
+              </div> -->
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <input class="form-control placeholder hide-on-focus" name="name" id="name" type="text" placeholder="Enter your name">
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <input class="form-control placeholder hide-on-focus" name="email" id="email" type="email" placeholder="Enter email address">
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <input class="form-control placeholder hide-on-focus" name="phone_number" id="phone" type="text" pattern="[789][0-9]{9}" placeholder="Enter phone number">
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <h3>Services</h3>
+                <div class="form-group">
+                  <input type="radio" name="services" value="Roof-Top Landscaping" checked> Roof-Top Landscaping<br>
+                  <input type="radio" name="services" value="Construction"> Construction<br>
+                    <input type="radio" name="services" value="Hydroponics"> Hydroponics<br>
+                      <input type="radio" name="services" value="Structural Consultancy"> Structural Consultancy<br>
+                  <input type="radio" name="services" value="CAD Services"> CAD Services
+              </div>
+              <div class="col-sm-6">
+                <h3>Training</h3>
+                <div class="form-group">
+                  <input type="radio" name="training" value="CivilCADD" checked> CivilCADD<br>
+                  <input type="radio" name="training" value="interiordesign"> Interior Design<br>
+                  <input type="radio" name="training" value="NATA"> NATA
+              </div>
+            </div>
+            <div class="form-group mt-3">
+              <button type="submit" class="btn btn-success">Send Message</button>
+            </div>
+          </form>
+        </div>
+        <div class="col-lg-4">
+          <div class="media contact-info">
+            <span class="contact-info__icon"><i class="ti-home"></i></span>
+            <div class="media-body">
+              <h3><a href="">GRSH Solutions</a></h3>
+              <p>No.6 Acharya College Road<br>
+                 Near Banyan Tree<br>
+                 Ganapathi Nagar<br>
+                 Chikkabanavara,Bengaluru-560090</p>
+            </div>
+          </div>
+          <div class="media contact-info">
+            <span class="contact-info__icon"><i class="ti-tablet"></i></span>
+            <div class="media-body">
+              <h3><a>+91 99160 55355</a></h3>
+            </div>
+          </div>
+          <div class="media contact-info">
+            <span class="contact-info__icon"><i class="ti-email"></i></span>
+            <div class="media-body">
+              <h3><a href="#">rameshalagesh@grsh.in</a></h3>
+              <p>Send us your query anytime!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ================ contact section end ================= -->
+
+ <!--::footer_part start::-->
+ <footer class="footer_part">
+    <div class="container">
+       <div class="row">
+          <div class="col-lg-12">
+             <div class="footer_logo">
+                   <a href="/" class="footer_logo_iner"> <img src="static/img/footer1.png" alt="#"> </a>
+             </div>
+          </div>
+
+          <div class="col-sm-6 col-lg-3">
+             <div class="single_footer_part">
+                <h4 style="color:black">About Us</h4>
+                <p style="color:green;font-size:18px">At GRSH solutions  we build dreams, we build careers.</br>
+                  We believe in sharing knowledge, coexisting with nature and make world better place to live through our creative and innovative solutions.</p>
+                <div class="footer_icon social_icon">
+                   <ul class="list-unstyled">
+                      <li><a href="#" class="single_social_icon"><i class="fab fa-facebook-f"></i></a></li>
+                      <li><a href="#" class="single_social_icon"><i class="fab fa-twitter"></i></a></li>
+                      <li><a href="#" class="single_social_icon"><i class="fas fa-globe"></i></a></li>
+                      <li><a href="#" class="single_social_icon"><i class="fab fa-behance"></i></a></li>
+                   </ul>
+                </div>
+             </div>
+          </div>
+          <div class="col-sm-6 col-lg-3">
+            <div class="single_footer_part">
+               <h4 style="color:black">Important Link</h4>
+               <ul class="list-unstyled">
+                  <li style="color:green;font-size:18px"><a href=""> Roof-top Landscaping</a></li>
+                  <li style="color:green;font-size:18px"><a href=""> Construction</a></li>
+                  <li style="color:green;font-size:18px"><a href=""> Hydroponics</a></li>
+                  <li style="color:green;font-size:18px"><a href=""> Structural Consultancy</a></li>
+                  <li style="color:green;font-size:18px"><a href=""> CAD Services</a></li>
+               </ul>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-3">
+
+          </div>
+          <div class="col-sm-6 col-lg-3">
+            <div class="single_footer_part">
+               <h4 style="color:black">Contact Info</h4>
+               <p style="color:green;font-size:18px">No.6 Acharya College Road<br>
+                      Near Banyan Tree<br>
+                      Ganapathi Nagar<br>
+                      Chikkabanavara,Bengaluru-560090</p>
+               <p style="color:green;font-size:18px">Phone : +8880 44338899</p>
+               <p style="color:green;font-size:18px">Email : info@colorlib.com</p>
+            </div>
+
+
+          </div>
+       </div>
+       <hr>
+
+    </div>
+ </footer>
+ <!--::footer_part end::-->
+
+ <!-- jquery -->
+ <script src="static/js/jquery-1.12.1.min.js"></script>
+ <!-- popper js -->
+ <script src="static/js/popper.min.js"></script>
+ <!-- bootstrap js -->
+ <script src="static/js/bootstrap.min.js"></script>
+ <!-- easing js -->
+ <script src="static/js/jquery.magnific-popup.min.js"></script>
+ <!-- owl carousel js -->
+ <script src="static/js/owl.carousel.min.js"></script>
+ <script src="static/js/slick.min.js"></script>
+ <!-- easing js -->
+ <script src="static/js/jquery.easing.min.js"></script>
+ <!--masonry js-->
+ <script src="static/js/masonry.pkgd.min.js"></script>
+ <script src="static/js/masonry.pkgd.js"></script>
+ <!--form validation js-->
+ <script src="static/js/jquery.nice-select.min.js"></script>
+ <script src="static/js/contact.js"></script>
+ <script src="static/js/jquery.ajaxchimp.min.js"></script>
+ <script src="static/js/jquery.form.js"></script>
+ <script src="static/js/jquery.validate.min.js"></script>
+ <script src="static/js/mail-script.js"></script>
+ <!-- counter js -->
+ <script src="static/js/jquery.counterup.min.js"></script>
+ <script src="static/js/waypoints.min.js"></script>
+ <!-- custom js -->
+ <script src="static/js/custom.js"></script>
+</body>
+
+</html>
